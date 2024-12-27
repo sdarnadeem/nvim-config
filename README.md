@@ -10,16 +10,24 @@
 
 ## 2. Window Keybinding
 
-| Mode | Keybinding | Description               |
-| :--- | :--------- | :------------------------ |
-| n    | leader sa  | Split Window Horizontally |
-| n    | leader sv  | split window vertically   |
-| n    | leader se  | Make widows equal         |
-| n    | leader sx  | close current window      |
-| n    | leader sh  | Go to left window         |
-| n    | leader sl  | Go to right window        |
-| n    | leader sj  | Go to below window        |
-| n    | leader sk  | Go to up window           |
+| Mode | Keybinding | Description                                   |
+| :--- | :--------- | :-------------------------------------------- |
+| n    | leader sa  | Split Window Horizontally                     |
+| n    | leader sv  | split window vertically                       |
+| n    | leader se  | Make widows equal                             |
+| n    | leader sx  | close current window                          |
+| n    | leader sh  | Go to left window                             |
+| n    | leader sl  | Go to right window                            |
+| n    | leader sj  | Go to below window                            |
+| n    | leader sk  | Go to up window                               |
+| n    | ctrl ->    | Decrease window length                        |
+| n    | ctrl <-    | Increase window length                        |
+| n    | ctrl up    | Increase window height                        |
+| n    | ctrl down  | Decrease window height                        |
+| n    | leader sL  | Swap the current Window with the right window |
+| n    | leader sH  | Swap the current window with the left window  |
+| n    | leader sK  | Swap the current window with the window above |
+| n    | leader sJ  | Swap the current window with the window below |
 
 ## 3. Tab Management
 
@@ -42,14 +50,17 @@
 
 ## 4. Telescope
 
-| Mode | Keybinding | Description                             |
-| :--- | :--------- | :-------------------------------------- |
-| n    | leader ff  | Fuzzy find files in cwd                 |
-| n    | leader fr  | Fuzzy find recent files                 |
-| n    | leader fs  | Find string in cwd                      |
-| n    | leader fc  | Find string under current cursor in cwd |
-| n    | leader ft  | Find todos                              |
-|      |            |                                         |
+| Mode | Keybinding | Description                              |
+| :--- | :--------- | :--------------------------------------- |
+| n    | leader ff  | Fuzzy find files in cwd                  |
+| n    | leader fr  | Fuzzy find recent files                  |
+| n    | leader fs  | Find string in cwd                       |
+| n    | leader fc  | Find string under current cursor in cwd  |
+| n    | leader ft  | Find todos                               |
+| n    | leader fb  | List buffers                             |
+| n    | ctrl x     | Opens telescope file in horizontal split |
+| n    | ctrl v     | Open telescope file in vertical split    |
+| n    | ctrl t     | Opens telescope file in new tab          |
 
 ## 5. Git Signs (gitsigns.lua)
 
@@ -113,3 +124,37 @@
 | n    | leader ef  | Toggle file explorer on current file |
 | n    | leader ec  | Collapse file explorer               |
 | n    | leader er  | Refresh file explorer                |
+
+## 6. Substitute (substitute.lua)
+
+| Mode | Keybinding                   | Description               |
+| :--- | :--------------------------- | :------------------------ |
+| n    | s                            | Substitute with motion    |
+| n    | ss                           | subsitute line            |
+| n    | substiute to the end of line |
+| x    | s                            | Substitute in visula mode |
+
+## 6. Todo Comments (todo-comments.lua)
+
+| Mode | Keybinding | Description           |
+| :--- | :--------- | :-------------------- |
+| n    | ]t         | Next Todo Comment     |
+| n    | [t         | Previous todo comment |
+
+## 6. Lsp Config (lspconfig.lua)
+
+| Mode | Keybinding | Description                                   |
+| :--- | :--------- | :-------------------------------------------- |
+| n    | gR         | Show LSP refrences                            |
+| n    | gD         | Go to declaration                             |
+| n    | gd         | Show LSP definitions                          |
+| n    | gi         | show LSP implementations                      |
+| n    | gt         | Show LSP type definitions                     |
+| nv   | leader ca  | show available code actions                   |
+| n    | leader rn  | smart rename                                  |
+| n    | leader D   | show buffer diagnostics                       |
+| n    | leader d   | Show line diagnostics                         |
+| n    | [d         | Jump to previous diagnostic in buffer         |
+| n    | ]d         | Jump to next diagnostics                      |
+| n    | K          | Show diagnostics for what is under the cursor |
+| n    | leader rs  | restart LSP                                   |
